@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [NinjatutorialSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="NinjaTest(failed)">
+    <classes>
+      <class name="com.qa.tutorials.testcases.LoginTest">
+        <methods>
+          <include name="VerifyLoginWithInvalidEmailidValidPassword"/>
+          <include name="verifyLoginWithInValidCredentials"/>
+          <include name="setup"/>
+          <include name="VerifyLoginWithNoCredentials"/>
+          <include name="VerifyLoginWithvalidEmailidInValidPassword"/>
+          <include name="verifyLoginWithValidCredentials"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.tutorials.testcases.LoginTest -->
+      <class name="com.qa.tutorials.testcases.SearchTest">
+        <methods>
+          <include name="verifySearchWithoutAnyProduct"/>
+          <include name="tearDown"/>
+          <include name="startup"/>
+          <include name="verifySearchWithValidProduct"/>
+          <include name="verifySearchWithInValidProduct"/>
+        </methods>
+      </class> <!-- com.qa.tutorials.testcases.SearchTest -->
+      <class name="com.qa.tutorials.testcases.RegisterTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyRegestrationWithoutAnyDetails"/>
+          <include name="verifyRegistrationMandatoryField"/>
+          <include name="verifyRegistrationWithAllField"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.qa.tutorials.testcases.RegisterTest -->
+    </classes>
+  </test> <!-- NinjaTest(failed) -->
+</suite> <!-- Failed suite [NinjatutorialSuite] -->
